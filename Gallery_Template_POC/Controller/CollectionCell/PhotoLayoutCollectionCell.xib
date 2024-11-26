@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoLayoutCollectionCell" customModule="BaseCode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="197"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="197"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5m-ku-yqB">
+                        <rect key="frame" x="0.0" y="0.0" width="224" height="197"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fG3-ee-ZHx">
+                                <rect key="frame" x="4" y="4" width="216" height="189"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fG3-ee-ZHx" secondAttribute="bottom" constant="4" id="JSM-MU-LSM"/>
+                            <constraint firstItem="fG3-ee-ZHx" firstAttribute="top" secondItem="Y5m-ku-yqB" secondAttribute="top" constant="4" id="ToO-5E-c7o"/>
+                            <constraint firstAttribute="trailing" secondItem="fG3-ee-ZHx" secondAttribute="trailing" constant="4" id="yiF-pH-xpY"/>
+                            <constraint firstItem="fG3-ee-ZHx" firstAttribute="leading" secondItem="Y5m-ku-yqB" secondAttribute="leading" constant="4" id="yvq-93-emn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Y5m-ku-yqB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2Nt-Pb-sQk"/>
+                <constraint firstAttribute="bottom" secondItem="Y5m-ku-yqB" secondAttribute="bottom" id="FvB-IP-FU8"/>
+                <constraint firstAttribute="trailing" secondItem="Y5m-ku-yqB" secondAttribute="trailing" id="RWg-7R-taT"/>
+                <constraint firstItem="Y5m-ku-yqB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ioD-Xh-LNL"/>
+            </constraints>
+            <size key="customSize" width="224" height="197"/>
+            <connections>
+                <outlet property="collageImageView" destination="fG3-ee-ZHx" id="QzN-VA-5yX"/>
+                <outlet property="collageView" destination="Y5m-ku-yqB" id="pbJ-Lw-iDN"/>
+            </connections>
+            <point key="canvasLocation" x="207.63358778625954" y="71.478873239436624"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
